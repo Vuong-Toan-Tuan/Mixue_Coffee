@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="611.0" prefWidth="860.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eProject2.ProductTypeController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints maxHeight="194.66665649414062" minHeight="10.0" prefHeight="59.666656494140625" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="194.66665649414062" minHeight="10.0" prefHeight="59.666656494140625" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="438.0" minHeight="10.0" prefHeight="415.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="396.3333282470703" minHeight="10.0" prefHeight="77.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+         <children>
+            <Label text="Tìm kiếm">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="txtSearch" prefHeight="29.0" prefWidth="164.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+            <Button fx:id="btnSearch" mnemonicParsing="false" onAction="#btnSearchClick" text="Search" />
+         </children>
+      </HBox>
+      <TableView fx:id="tvProductType" prefHeight="427.0" prefWidth="441.0" GridPane.rowIndex="2">
+        <columns>
+          <TableColumn fx:id="tcProductTypeID" prefWidth="147.66668701171875" text="Mã Loại Sản Phẩm" />
+          <TableColumn fx:id="tcProductTypeName" prefWidth="268.0" text="Tên Loại Sản Phấm" />
+        </columns>
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+      </TableView>
+      <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="64.0" prefWidth="325.0">
+               <children>
+                  <Label text="Tên Loại Sản Phẩm">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="15.0" right="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="txtProductTypeName">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="65.0" prefWidth="325.0">
+               <children>
+                  <Button fx:id="btnInsertPT" mnemonicParsing="false" onAction="#btnInsertClickPT" text="Thêm">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="btnUpdatePT" mnemonicParsing="false" onAction="#btnUpdateClickPT" text="Sửa">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="btnDeletePT" mnemonicParsing="false" onAction="#btnDeleteClickPT" text="Xóa">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="btnResetPT" mnemonicParsing="false" onAction="#btnResetClickPT" text="Làm mới">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="57.0" prefWidth="315.0">
+               <children>
+                  <Label text="Messages: " textFill="RED">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbMessages">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="BOTTOM_RIGHT" prefHeight="150.0" prefWidth="325.0" />
+         </children>
+      </VBox>
+      <Button fx:id="btnBack" mnemonicParsing="false" onAction="#btnBackClick" text="&lt;&lt; Back" textFill="#219be1" GridPane.rowIndex="3">
+         <GridPane.margin>
+            <Insets left="45.0" />
+         </GridPane.margin>
+      </Button>
+      <Label prefHeight="27.0" prefWidth="144.0" text="Phiên đăng nhập:" GridPane.columnIndex="1">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbMember" prefHeight="35.0" prefWidth="180.0" text="Label" textFill="#894d14" GridPane.columnIndex="1">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="144.0" />
+         </GridPane.margin>
+      </Label>
+      <Hyperlink fx:id="btnLogout" onAction="#btnLogoutClick" prefHeight="29.0" prefWidth="103.0" text="Đăng xuất" GridPane.columnIndex="1">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="330.0" />
+         </GridPane.margin>
+      </Hyperlink>
+      <Label prefHeight="36.0" prefWidth="252.0" text="Mixue loại sản phẩm" textFill="#e50969">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+      </Label>
+   </children>
+</GridPane>

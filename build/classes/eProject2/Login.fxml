@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="1108.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eProject2.LoginController">
+   <children>
+      <ImageView fitHeight="716.0" fitWidth="664.0" layoutX="-6.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/hinhnenlogin.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="825.0" layoutY="32.0" prefHeight="36.0" prefWidth="143.0" text="Account Login">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="731.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/pass.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtUserName" layoutX="794.0" layoutY="115.0" prefHeight="45.0" prefWidth="250.0" promptText="UserName" />
+      <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="728.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/usericon.jpg" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="txtPassword" layoutX="794.0" layoutY="186.0" prefHeight="45.0" prefWidth="250.0" promptText="Password" />
+      <Button fx:id="btnLogin" defaultButton="true" layoutX="725.0" layoutY="330.0" mnemonicParsing="false" onAction="#btnLoginClick" prefHeight="40.0" prefWidth="100.0" text="Đăng nhập" />
+      <Label fx:id="lbMsg" layoutX="764.0" layoutY="238.0" prefHeight="29.0" prefWidth="257.0" />
+      <ComboBox fx:id="cbRole" layoutX="794.0" layoutY="274.0" prefHeight="40.0" prefWidth="250.0" />
+      <Button layoutX="893.0" layoutY="330.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="Đăng ký" />
+   </children>
+</Pane>

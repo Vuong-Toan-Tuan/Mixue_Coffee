@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="675.0" prefWidth="1078.0" style="-fx-background-color: #FFCC99;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eProject2.HomeManagerController">
+   
+    <children>
+      <Button fx:id="btnProductType" layoutX="38.0" layoutY="332.0" mnemonicParsing="false" onAction="#btnProductTypeClick" prefHeight="104.0" prefWidth="187.0" style="-fx-background-radius: 8px;" styleClass="btn" stylesheets="@style.css" text="Loại Sản Phẩm">
+         <padding>
+            <Insets left="70.0" />
+         </padding>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnProduct" layoutX="290.0" layoutY="332.0" mnemonicParsing="false" onAction="#btnProductcClick" prefHeight="104.0" prefWidth="187.0" style="-fx-background-radius: 8px;" styleClass="btn" stylesheets="@style.css" text="Sản Phẩm">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <padding>
+            <Insets left="75.0" />
+         </padding>
+      </Button>
+      <Button fx:id="btnRole" alignment="BASELINE_RIGHT" contentDisplay="RIGHT" layoutX="37.0" layoutY="196.0" mnemonicParsing="false" onAction="#btnRoleClick" prefHeight="104.0" prefWidth="187.0" style="-fx-background-radius: 8px;" styleClass="btn" stylesheets="@style.css" text="Chức Vụ" textAlignment="RIGHT">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets right="30.0" />
+         </padding>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnOrder" layoutX="160.0" layoutY="465.0" mnemonicParsing="false" onAction="#btnOrderClick" prefHeight="104.0" prefWidth="187.0" style="-fx-background-radius: 8px;" styleClass="btn" stylesheets="@style.css" text="Đặt Hàng">
+         <padding>
+            <Insets left="80.0" />
+         </padding>
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <ImageView fitHeight="87.0" fitWidth="71.0" layoutX="43.0" layoutY="211.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/chucvu.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="87.0" fitWidth="71.0" layoutX="168.0" layoutY="482.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/dathang.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="87.0" fitWidth="71.0" layoutX="296.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/sanpham.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnMember" alignment="BASELINE_RIGHT" contentDisplay="RIGHT" layoutX="290.0" layoutY="196.0" mnemonicParsing="false" onAction="#btnMemberClick" prefHeight="104.0" prefWidth="187.0" style="-fx-background-radius: 8px;" styleClass="btn" stylesheets="@style.css" text="Thành Viên" textAlignment="RIGHT">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets right="15.0" />
+         </padding>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="87.0" fitWidth="71.0" layoutX="296.0" layoutY="211.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/thanhvien.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="87.0" fitWidth="71.0" layoutX="43.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/loaisanpham.png" />
+         </image>
+      </ImageView>
+      <Hyperlink fx:id="btnLogout" layoutX="928.0" layoutY="25.0" onAction="#btnLogoutClick" prefHeight="29.0" prefWidth="103.0" text="Đăng Xuất">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Hyperlink>
+      <ImageView fitHeight="535.0" fitWidth="544.0" layoutX="522.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/home.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="597.0" layoutY="29.0" prefHeight="27.0" prefWidth="144.0" text="Phiên đăng nhập:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbMember" layoutX="748.0" layoutY="25.0" prefHeight="35.0" prefWidth="180.0" textFill="#894d14">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+   </children>
+</Pane>

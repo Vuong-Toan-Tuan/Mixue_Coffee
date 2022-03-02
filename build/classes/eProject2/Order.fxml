@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="778.0" prefWidth="971.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eProject2.OrderController">
+   <children>
+      <Label layoutX="14.0" layoutY="89.0" prefHeight="17.0" prefWidth="196.0" text="Thông tin khách hàng">
+         <font>
+            <Font size="19.0" />
+         </font></Label>
+      <Label layoutX="26.0" layoutY="21.0" prefHeight="36.0" prefWidth="196.0" text="Mixue Order" textFill="#e50969">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font></Label>
+      <TableView fx:id="tvOrders" layoutX="25.0" layoutY="310.0" prefHeight="368.0" prefWidth="923.0">
+        <columns>
+          <TableColumn fx:id="tcID" text="Mã đơn" />
+          <TableColumn fx:id="tcKH" prefWidth="247.0" text="Thông tin KH" />
+          <TableColumn fx:id="tcNV" prefWidth="179.0" text="Nhân viên chực đơn" />
+          <TableColumn fx:id="tcTime" prefWidth="256.0" text="Thời gian" />
+          <TableColumn fx:id="tcTongTien" prefWidth="160.0" text="Tổng tiền" />
+        </columns>
+      </TableView>
+      <Button fx:id="OkC" layoutX="538.0" layoutY="126.0" mnemonicParsing="false" onAction="#btnOkClick" prefHeight="31.0" prefWidth="80.0" text="OK" textFill="#54e512">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="btnReset" layoutX="638.0" layoutY="126.0" mnemonicParsing="false" onAction="#btnResetClick" prefHeight="31.0" prefWidth="80.0" text="Reset" textFill="#f50606">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="Details" layoutX="778.0" layoutY="709.0" mnemonicParsing="false" onAction="#btnDetailsClick" prefHeight="41.0" prefWidth="112.0" text="Chi tiết đơn" />
+      <Button fx:id="Sua" layoutX="610.0" layoutY="709.0" mnemonicParsing="false" onAction="#btnSuaClick" prefHeight="41.0" prefWidth="68.0" text="Sửa" />
+      <Button layoutX="694.0" layoutY="709.0" mnemonicParsing="false" onAction="#btnXoaClick" prefHeight="41.0" prefWidth="68.0" text="Xóa" fx:id="xoa" />
+      <Label fx:id="txtmsg" layoutX="210.0" layoutY="216.0" prefHeight="21.0" prefWidth="396.0" />
+      <TextArea fx:id="TenKH" layoutX="210.0" layoutY="79.0" prefHeight="114.0" prefWidth="303.0" />
+      <Button fx:id="btnBack" layoutX="26.0" layoutY="709.0" mnemonicParsing="false" onAction="#btnBackClick" prefHeight="41.0" prefWidth="102.0" text="&lt;&lt; Quay Lại" textFill="#219be1" />
+      <Button fx:id="btnPrint" layoutX="778.0" layoutY="237.0" mnemonicParsing="false" onAction="#btnPrintClick" prefHeight="50.0" prefWidth="148.0" text="Xuất hóa đơn" />
+      <Label layoutX="494.0" layoutY="26.0" prefHeight="27.0" prefWidth="144.0" text="Phiên đăng nhập:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbMember" layoutX="638.0" layoutY="22.0" prefHeight="35.0" prefWidth="180.0" textFill="#894d14">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Hyperlink fx:id="btnLogout" layoutX="825.0" layoutY="25.0" onAction="#btnLogoutClick" prefHeight="29.0" prefWidth="103.0" text="Đăng xuất">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Hyperlink>
+   </children>
+</Pane>

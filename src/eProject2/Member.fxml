@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="Pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="881.0" prefWidth="1520.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eProject2.MemberController">
+   <children>
+      <Label layoutX="641.0" layoutY="223.0" prefHeight="21.0" prefWidth="70.0" text="Số CMT" />
+      <Label layoutX="28.0" layoutY="89.0" text="Tài khoản" />
+      <Label layoutX="29.0" layoutY="135.0" text="Mật khẩu" />
+      <Label layoutX="331.0" layoutY="135.0" text="Giới tính" />
+      <Label layoutX="350.0" layoutY="223.0" text="SĐT" />
+      <Label layoutX="346.0" layoutY="174.0" text="Email" />
+      <Label layoutX="39.0" layoutY="223.0" text="Chức vụ" />
+      <Label layoutX="1009.0" layoutY="163.0" text="Ảnh" />
+      <Label layoutX="963.0" layoutY="79.0" text="Ca làm việc" />
+      <TextField fx:id="txtUserName" layoutX="114.0" layoutY="85.0" prefHeight="25.0" prefWidth="164.0" />
+      <TextField fx:id="txtEmail" layoutX="412.0" layoutY="172.0" prefHeight="25.0" prefWidth="164.0" />
+      <TextField fx:id="txtPhone" layoutX="412.0" layoutY="218.0" prefHeight="25.0" prefWidth="164.0" />
+      <TextField fx:id="txtIDCard" layoutX="714.0" layoutY="218.0" prefHeight="31.0" prefWidth="189.0" />
+      <Button fx:id="btnReset" layoutX="1144.0" layoutY="282.0" mnemonicParsing="false" onAction="#btnResetClick" prefHeight="31.0" prefWidth="95.0" text="Làm mới" />
+      <Button fx:id="btnInsert" layoutX="1075.0" layoutY="282.0" mnemonicParsing="false" onAction="#btnInsertClick" prefHeight="25.0" prefWidth="60.0" text="Thêm" />
+      <Button fx:id="btnDelete" layoutX="987.0" layoutY="814.0" mnemonicParsing="false" onAction="#btnDeleteClick" prefHeight="25.0" prefWidth="70.0" text="Xóa" />
+      <Button fx:id="btnDetails" layoutX="1140.0" layoutY="814.0" mnemonicParsing="false" onAction="#btnDetailsClick" prefHeight="25.0" prefWidth="70.0" text="Chi tiết" />
+      <Button fx:id="btnUpdate" layoutX="821.0" layoutY="814.0" mnemonicParsing="false" onAction="#btnUpdateClick" prefHeight="25.0" prefWidth="70.0" text="Sửa" />
+      <TableView fx:id="tvMembers" layoutX="23.0" layoutY="319.0" prefHeight="471.0" prefWidth="1475.0">
+        <columns>
+          <TableColumn fx:id="tcUsername" prefWidth="135.0" text="Tài khoản" />
+          <TableColumn fx:id="tcFullname" prefWidth="135.0" text="Họ và Tên" />
+            <TableColumn fx:id="tcIDCard" minWidth="1.0" prefWidth="148.0" text="CMT" />
+            <TableColumn fx:id="tcGender" text="Giới tính" />
+            <TableColumn fx:id="tcPhone" prefWidth="135.0" text="SĐT" />
+            <TableColumn fx:id="tcEmail" prefWidth="204.0" text="Email" />
+            <TableColumn fx:id="tcAddress" prefWidth="200.0" text="Địa chỉ" />
+            <TableColumn fx:id="tcRole" prefWidth="145.0" text="Chức vụ" />
+            <TableColumn fx:id="tcImg" prefWidth="150.0" text="Hình ảnh" />
+            <TableColumn fx:id="tcShift" prefWidth="145.0" text="Ca làm việc" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtFullname" layoutX="412.0" layoutY="84.0" prefHeight="31.0" prefWidth="164.0" />
+      <Label layoutX="327.0" layoutY="89.0" text="Họ và tên" />
+      <Label layoutX="641.0" layoutY="90.0" prefHeight="21.0" prefWidth="45.0" text="Địa chỉ" />
+      <Label layoutX="5.0" layoutY="174.0" text="Xác nhận MK" />
+      <PasswordField fx:id="txtPassword" layoutX="114.0" layoutY="130.0" prefHeight="31.0" prefWidth="164.0" />
+      <PasswordField fx:id="txtPasswordConfirm" layoutX="114.0" layoutY="172.0" prefHeight="31.0" prefWidth="164.0" />
+      <TextArea fx:id="txtAddress" layoutX="714.0" layoutY="87.0" prefHeight="118.0" prefWidth="189.0" />
+      <Button fx:id="btnBack" layoutX="28.0" layoutY="814.0" mnemonicParsing="false" onAction="#btnBackClick" prefHeight="41.0" prefWidth="102.0" text="&lt;&lt; Quay Lại" textFill="#219be1" />
+      <ComboBox fx:id="txtRole" layoutX="114.0" layoutY="218.0" prefHeight="31.0" prefWidth="164.0" />
+      <ComboBox fx:id="txtGender" layoutX="412.0" layoutY="130.0" prefHeight="31.0" prefWidth="164.0" />
+      <ComboBox fx:id="txtShift" layoutX="1075.0" layoutY="75.0" prefHeight="31.0" prefWidth="164.0" />
+      <ImageView fx:id="txtImg" fitHeight="147.0" fitWidth="189.0" layoutX="1062.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="btnBrowse" layoutX="1272.0" layoutY="156.0" mnemonicParsing="false" onAction="#btnBrowseClick" text="Browse" />
+      <Label fx:id="lbMember" layoutX="1192.0" layoutY="13.0" prefHeight="35.0" prefWidth="189.0" textFill="#894d14">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="1038.0" layoutY="17.0" prefHeight="27.0" prefWidth="144.0" text="Phiên đăng nhập:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Hyperlink fx:id="btnLogout" layoutX="1403.0" layoutY="13.0" onAction="#btnLogoutClick" prefHeight="29.0" prefWidth="103.0" text="Đăng Xuất">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Hyperlink>
+      <Label fx:id="lbMsg" layoutX="43.0" layoutY="272.0" />
+      <Label layoutX="16.0" layoutY="17.0" prefHeight="36.0" prefWidth="239.0" text="Mixue thành viên" textFill="#e50969">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfsearchMember" layoutX="641.0" layoutY="278.0" promptText="Search..." />
+      <Button fx:id="btnSearch" layoutX="826.0" layoutY="278.0" mnemonicParsing="false" onAction="#btnSearchClick" prefHeight="31.0" text="Tìm kiếm" />
+   </children>
+</Pane>

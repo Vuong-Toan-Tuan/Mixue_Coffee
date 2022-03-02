@@ -1,0 +1,86 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 26, 2020, 9:18:34 AM
+    Author     : Administrator
+*/
+.btn{
+    -fx-transition-duration: 0.4s;
+}
+.btn:hover{
+    -fx-background-color: #CC9933;  
+    -fx-color: white;
+}
+.lbmember{
+    -fx-translate-x: 750;
+    -fx-font-weight: bold;
+    -fx-font-size: 18;
+    -fx-text-fill: #894d14;
+    -fx-font-weight: bold;
+}
+.logout{
+    -fx-translate-x: 1015;
+    /*-fx-border-color: white;*/
+}
+.title{
+    -fx-text-fill: #e50969;
+    /*-fx-text-alignment: center;*/
+    -fx-font-size: 25pt;
+    -fx-translate-x: 450;
+    -fx-text-color: #e50969;
+    -fx-font-weight: bold;
+}
+.title2{
+    -fx-text-fill: #e50969;
+    -fx-font-size: 25pt;
+    -fx-translate-x: 330;
+    -fx-translate-y: 130;
+    -fx-font-weight: bold;
+}
+.btnBack:hover{
+    -fx-background-color: #e50969;
+}
+.btnBack{
+    /*-fx-border-color: white;*/
+    -fx-background-radius: 35;
+}
+.lb{
+    -fx-font-weight: bold;
+}
+.search{
+    -fx-translate-x: 280;
+    -fx-translate-y: 60;
+}
+.lbsearch{
+    -fx-font-weight: bold;
+    -fx-translate-x: 230;
+    -fx-translate-y: 66;
+}
+.btnsearch{
+    -fx-translate-x: 740;
+    -fx-translate-y: 62;
+}
+.btnCart{
+    /*-fx-translate-x: 1020;*/
+    /*-fx-translate-y: 62;*/
+/*    -fx-pref-tile-width: 98;
+    -fx-pref-tile-height: 98;*/
+    
+}
+.btnback{
+    -fx-translate-x: 50;
+    -fx-translate-y: 80;
+}
+.navbarHome{
+    -fx-translate-y: 107; 
+    -fx-background-color: red;
+}
+.btndelete{
+    -fx-background-color: red;
+}
+.btnupdate{
+    -fx-background-color: greenyellow;
+}

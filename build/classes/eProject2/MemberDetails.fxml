@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="722.0" prefWidth="1063.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eProject2.MemberDetailsController">
+   <stylesheets>
+        <URL value="@style.css" />
+    </stylesheets>
+    
+    <children>
+      <Label fx:id="dtUsername" layoutX="556.0" layoutY="79.0" prefHeight="21.0" prefWidth="497.0" text="a" />
+      <Label fx:id="dtFullname" layoutX="556.0" layoutY="127.0" prefHeight="21.0" prefWidth="503.0" text="b" />
+      <Label fx:id="dtIDcard" layoutX="556.0" layoutY="176.0" prefHeight="21.0" prefWidth="503.0" text="c" />
+      <Label fx:id="dtGender" layoutX="553.0" layoutY="232.0" prefHeight="21.0" prefWidth="503.0" text="d" />
+      <Label fx:id="dtPhone" layoutX="556.0" layoutY="292.0" prefHeight="21.0" prefWidth="503.0" text="e" />
+      <Label fx:id="dtEmail" layoutX="556.0" layoutY="410.0" prefHeight="21.0" prefWidth="497.0" text="g" />
+      <Label fx:id="dtAddress" layoutX="556.0" layoutY="351.0" prefHeight="21.0" prefWidth="497.0" text="f" />
+      <Label fx:id="dtRole" layoutX="556.0" layoutY="469.0" prefHeight="21.0" prefWidth="497.0" text="h" />
+      <Label fx:id="dtShift" layoutX="556.0" layoutY="536.0" prefHeight="21.0" prefWidth="497.0" text="j" />
+      <Label layoutX="434.0" layoutY="79.0" prefHeight="21.0" prefWidth="78.0" styleClass="lb" text="Tài khoản" />
+      <Label layoutX="433.0" layoutY="127.0" styleClass="lb" text="Họ và tên" />
+      <Label layoutX="433.0" layoutY="176.0" styleClass="lb" text="CMT" />
+      <Label layoutX="433.0" layoutY="232.0" styleClass="lb" text="Giới tính" />
+      <Label layoutX="435.0" layoutY="292.0" styleClass="lb" text="SĐT" />
+      <Label layoutX="430.0" layoutY="351.0" styleClass="lb" text="Địa chỉ" />
+      <Label layoutX="433.0" layoutY="410.0" styleClass="lb" text="Email" />
+      <Label layoutX="428.0" layoutY="469.0" styleClass="lb" text="Chức vụ" />
+      <Label layoutX="424.0" layoutY="536.0" styleClass="lb" text="Ca làm việc" />
+      <ImageView fx:id="dtImg" fitHeight="306.0" fitWidth="284.0" layoutX="98.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="lbMember" layoutX="729.0" layoutY="29.0" prefHeight="35.0" prefWidth="180.0" textFill="#894d14">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="577.0" layoutY="33.0" prefHeight="27.0" prefWidth="144.0" text="Phiên đăng nhập:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Hyperlink fx:id="btnLogout" layoutX="922.0" layoutY="29.0" onAction="#btnLogoutClick" prefHeight="29.0" prefWidth="103.0" text="Đăng Xuất">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Hyperlink>
+      <Button fx:id="btnBack" layoutX="98.0" layoutY="634.0" mnemonicParsing="false" onAction="#btnBackClick" prefHeight="41.0" prefWidth="102.0" text="&lt;&lt; Quay Lại" textFill="#219be1" />
+      <Label layoutX="20.0" layoutY="15.0" prefHeight="36.0" prefWidth="284.0" text="Mixue Member Details" textFill="#e50969">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

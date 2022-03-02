@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane fx:id="GridPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="835.0" prefWidth="895.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eProject2.ProductController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints maxHeight="83.33332824707031" minHeight="10.0" prefHeight="66.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="83.33332824707031" minHeight="10.0" prefHeight="66.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="83.33332824707031" minHeight="10.0" prefHeight="59.666656494140625" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="237.3333282470703" minHeight="10.0" prefHeight="75.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="277.6666564941406" minHeight="4.6666717529296875" prefHeight="94.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="277.66668701171875" minHeight="10.0" prefHeight="83.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="277.66668701171875" minHeight="10.0" prefHeight="64.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="589.0" minHeight="10.0" prefHeight="340.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="356.3333435058594" minHeight="10.0" prefHeight="75.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2">
+         <children>
+            <Label text="Tên Sản Phẩm">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="40.0" right="18.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="txtProductName">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="80.0" />
+               </HBox.margin></TextField>
+            <Label text="Giá">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="15.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="txtPrice">
+               <font>
+                  <Font size="13.0" />
+               </font></TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="3">
+         <children>
+            <Label text="Loại Sản Phẩm">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="40.0" right="15.0" />
+               </HBox.margin>
+            </Label>
+            <ComboBox fx:id="cbbProductType" prefHeight="29.0" prefWidth="162.0">
+               <HBox.margin>
+                  <Insets right="80.0" />
+               </HBox.margin></ComboBox>
+            <Label text="Ảnh">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="15.0" />
+               </HBox.margin>
+            </Label>
+            <ImageView fx:id="txtImage" fitHeight="88.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets right="15.0" />
+               </HBox.margin>
+            </ImageView>
+            <Button fx:id="btnBrowse" mnemonicParsing="false" onAction="#btnBrowseClick" text="Browse" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="4">
+         <children>
+            <Label text="Thành phần">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="40.0" right="33.0" />
+               </HBox.margin>
+            </Label>
+            <TextArea fx:id="txtDetails" prefHeight="73.0" prefWidth="162.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextArea>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="5">
+         <children>
+            <Button fx:id="btnInsertP" mnemonicParsing="false" onAction="#btnInsertPClick" text="Thêm">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="40.0" right="10.0" />
+               </HBox.margin></Button>
+            <Button fx:id="btnUpdateP" mnemonicParsing="false" onAction="#btnUpdatePClick" text="Sửa">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin></Button>
+            <Button fx:id="btnDeleteP" mnemonicParsing="false" onAction="#btnDeletePClick" text="Xóa">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin></Button>
+            <Button fx:id="btnResetP" mnemonicParsing="false" onAction="#btnResetPClick" text="Làm mới">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin></Button>
+            <Label text="Tìm kiếm">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="15.0" />
+               </HBox.margin></Label>
+            <TextField fx:id="TfSearch">
+               <font>
+                  <Font size="13.0" />
+               </font></TextField>
+            <Button fx:id="btnSearch" mnemonicParsing="false" onAction="#btnSearchClick" text="Search" />
+         </children>
+      </HBox>
+      <TableView fx:id="tvProduct" prefHeight="379.0" prefWidth="681.0" GridPane.rowIndex="7">
+        <columns>
+          <TableColumn fx:id="tcProductName" prefWidth="194.0" text="Tên Sản Phẩm" />
+          <TableColumn fx:id="tcProductType" prefWidth="137.0" text="Loại Sản Phẩm" />
+            <TableColumn fx:id="tcPrice" prefWidth="167.0" text="Giá(VND)" />
+            <TableColumn fx:id="tcDetails" prefWidth="227.0" text="Thành Phần" />
+            <TableColumn fx:id="tcImage" prefWidth="168.0" text="Ảnh" />
+        </columns>
+      </TableView>
+      <Label text="Sản Phẩm" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="6">
+         <children>
+            <Label text="Messages: " textFill="RED">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbMessages">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+         <GridPane.margin>
+            <Insets left="20.0" />
+         </GridPane.margin>
+      </HBox>
+      <Button fx:id="btnBack" mnemonicParsing="false" onAction="#btnBackClick" prefHeight="37.0" prefWidth="76.0" text="&lt;&lt; Back" textFill="#219be1" GridPane.rowIndex="8">
+         <GridPane.margin>
+            <Insets left="50.0" />
+         </GridPane.margin>
+      </Button>
+      <Label prefHeight="36.0" prefWidth="196.0" text="Mixue sản phẩm" textFill="#e50969">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+      </Label>
+      <Label prefHeight="27.0" prefWidth="144.0" text="Phiên đăng nhập:">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="395.0" />
+         </GridPane.margin>
+      </Label>
+      <Label fx:id="lbMember" prefHeight="35.0" prefWidth="180.0" text="Label" textFill="#894d14">
+         <GridPane.margin>
+            <Insets left="541.0" />
+         </GridPane.margin>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Hyperlink fx:id="btnLogout" onAction="#btnLogoutClick" prefHeight="29.0" prefWidth="103.0" text="Đăng xuất">
+         <GridPane.margin>
+            <Insets left="730.0" />
+         </GridPane.margin>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Hyperlink>
+   </children>
+</GridPane>
